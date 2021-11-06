@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="cam.png" type="image/x-icon">
+        <title>Movie App</title>
+        
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" class="logo">
+                <i class="fas fa-camera-retro"></i>
+                <span>Movié.</span>
+            </a>
+
+            <div class="icons">
+                <form  id="form">
+                    <a href="#tags" class="fas fa-heart"></a>
+                    <a href="#tags" class="fas fa-file-video"></a>
+                    <input type="text" placeholder="&#xf002; SEARCH" style="font-family:FontAwesome" id="search" class="search">
+                </form>
+            </div>
+        </header>
+        
+        <section class="home" id="home">
+            <div id="swi">
+                <div class="mov" id="mov">
+                    <h1 class="heading"><span class="space">&nbsp;</span>&nbsp;fan favorites <span class="gt">&gt;</span></h1>
+                </div>
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper" id="swiperwrapper">
+                        <div class="swiper-slide">
+                            <div class="movie"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="movie"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="movie"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="movie"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="movie"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="movie"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="movie"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="movie"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            
+            <h1 class="heading" id="genre">
+                <span class="space">&nbsp;</span>
+                &nbsp;select genre <span class="gt">&gt;</span>
+            </h1>
+
+            <div id="tags"></div>
+
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content" id="overlay-content"></div>
+                <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&lt;</a> 
+                <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&gt;</a>
+            </div>
+            
+            <main id="main"></main>
+            
+            <div class="pagination">
+                <div class="page" id="prev"><span class="lt">&lt;</span>&nbsp; PREVIOUS PAGE</div>
+                <div class="current" id="current">1</div>
+                <div class="page" id="next">NEXT PAGE &nbsp;<span class="lt">&gt;</span></div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="top">
+                <div class="logo-details">
+                    <span class="logo_name">
+                        <i class="fas fa-camera-retro"></i>
+                        <span>Movié.</span>
+                    </span>
+                </div>
+
+                <div class="media-icons">
+                    <a href="https://www.facebook.com/D.PRASSU"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/prassu_dasari"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/prassu_dasari"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/prashanth-dasari-151685196"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
+                </div>
+
+            </div>
+
+            <div class="bottom-details">
+                <span class="copyright_text">Copyright © 2021 <a href="#">Movié.</a></span>
+                <span class="policy_terms"><a href="#">Privacy policy</a></span>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+        
+    </body>
+</html>
